@@ -1,0 +1,96 @@
+a.spoiler:after {
+	content: " [-] ";	
+}
+
+a.spoiler.collapsed:after {
+	content: "[+]";
+}
+
+.tab-pane {
+	margin-top: 10px;
+}
+
+
+.navbar  {
+	margin-bottom: 0px;
+}
+
+
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+	z-index: 10;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+	z-index: 10;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+	z-index: 10;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+	z-index: 10;
+}
+.video-container video {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+	z-index: 1;
+}
+
+.content {
+	font-family: 'Lobster', cursive;
+	position: absolute;
+	z-index: 10;
+	top: 250px;
+	left: 385px;
+	text-align: center;
+	font-size: 68px;
+	color: white;
+}
+
+
+@keyframes welcome {
+	0% {
+		color: white;
+	}
+	50% {
+		color: yellow;
+	}
+	100% {
+		color: white;
+	}
+}
+
+.content {
+	animation-name: welcome;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
